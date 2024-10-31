@@ -197,7 +197,6 @@ a:any-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #00bb8f65;
   position: relative;
   overflow: hidden;
 }
@@ -280,6 +279,107 @@ a:any-link {
   font: var(--BODY-BOLD);
   border-radius: 128px;
   text-align: center;
+  width: 100%;
+  height: 56px;
 }
 
-/* Tablet */
+/* Desktop */
+@media screen and (min-width: 992px) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+
+  /* || CARD-CONTAINER */
+  .card-container {
+    max-width: 736px;
+    min-height: 512px;
+    flex-flow: row;
+    box-shadow: var(--SHADOW);
+    border-radius: 32px;
+    align-items: center;
+  }
+
+  /* || CARD-FINAL */
+  .card-final {
+    max-width: 368px;
+    min-height: 512px;
+    gap: 0px;
+    padding: 38px 54px 46px 54px;
+    border-radius: 32px;
+  }
+
+  .card-final__sub-title {
+    font: var(--HEADING-M);
+    margin-bottom: 35px;
+  }
+
+  .card-final__value {
+    width: 200px;
+    height: 200px;
+    padding: 55px 60px 46px 59px;
+    margin-bottom: 28px;
+  }
+
+  .card-final__value .numerator {
+    font: var(--HEADING-XL);
+  }
+
+  .card-final__value .denominator {
+    font: var(--BODY-BOLD);
+  }
+
+  .card-final__final-text-content {
+    gap: 14px;
+  }
+
+  .final-text-content__title {
+    font: var(--HEADING-L);
+  }
+
+  .final-text-content__subtext {
+    font: var(--BODY);
+  }
+
+  /* || CARD-SUMMARY */
+  .card-summary__title {
+    font: var(--HEADING-M);
+    margin-bottom: 28px;
+  }
+
+  .card-summary {
+    margin: 38px 40px 46px 40px;
+    gap: 0px;
+  }
+
+  .card-summary__segments {
+    margin-bottom: 41px;
+  }
+
+  .segments {
+    padding: 17px 16px 16px 16px;
+  }
+
+  .segments-icon-label {
+    width: 103px;
+  }
+
+  .segments-label {
+    font: var(--BODY);
+  }
+
+  .segments__value {
+    width: 72px;
+    font: var(--BODY-BOLD);
+  }
+
+  .card-summary__button {
+    padding: 17px 107px 16px 106px;
+    transition: all 0.3s ease;
+  }
+
+  .card-summary__button:hover,
+  .card-summary__button:focus-visible {
+    background-image: var(--GRADIENT-1);
+  }
+}
