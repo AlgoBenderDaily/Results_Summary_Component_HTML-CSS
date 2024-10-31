@@ -283,8 +283,8 @@ a:any-link {
   height: 56px;
 }
 
-/* Desktop */
-@media screen and (min-width: 992px) {
+/* Tablet/Desktop */
+@media screen and (min-width: 768px) {
   body {
     display: grid;
     place-content: center;
